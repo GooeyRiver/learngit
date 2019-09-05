@@ -1,21 +1,16 @@
 <template>
-  <div class="hello">
-    <TestCom></TestCom>
-    <h1>{{ msg }}</h1>
-    
+  <div class="testcom">
+    <h1>{{ tmsg }}</h1>
   </div>
 </template>
 
 <script>
-import TestCom from '@/components/TestCom'
+
 export default {
-  name: 'HelloWorld',
-  components: {
-    TestCom
-  },
+  name: 'TestCom',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      tmsg: 'this is a test component'
     }
   }
 }
@@ -36,5 +31,8 @@ li {
 }
 a {
   color: #42b983;
+}
+.test {
+    background: #666;
 }
 </style>
